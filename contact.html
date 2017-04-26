@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Portfolio</title>
+  <link rel="stylesheet" href="asset/reset.css">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -21,11 +22,33 @@
           <section class="clsPageTitle">
               Contact
               <hr/>
-              <p>
-              <img src="images/Portfolio_About.jpg" style="width:100px; height:100px" alt="my pic" align="left"></img>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-              </p>
+              <p class="clsLabel">Name</p>
+              <input type="text" id="txtName"
+                onblur="if(this.value==''){ this.value='John Smith'; this.style.color='#BBB';}"
+                onfocus="if(this.value=='John Smith'){ this.value=''; this.style.color='#000';}"
+                style="color:#BBB;" value="John Smith"></input>
+              <p class="clsLabel">Email</p>
+              <input type="text" id="txtEmail"
+                  onblur="if(this.value==''){ this.value='example@gmail.com'; this.style.color='#BBB';}"
+                  onfocus="if(this.value=='example@gmail.com'){ this.value=''; this.style.color='#000';}"
+                  style="color:#BBB;" value="example@gmail.com">
+              </input>
+              <p class="clsLabel">Message</p><br/>
+              <textarea id="txtMessage" rows="10" cols="20"></textarea>
+              <input class="clsButton" value="Submit" type="button" onclick="alert('Hey ' + txtName.value);"></input>
           </section>
+          <aside class="clsPageTitle">
+              Connect with me
+              <hr/>
+              <ul>
+                  <li><a href="https://github.com/luthrajat" target="_blank"><img alt="GitHub" src="images/GitHub.png" class="clsImg"/></a></li>
+                  <li><a href="https://linkedin.com/" target="_blank"><img alt="LinkedIn" src="images/LinkedIn.png" class="clsImg"/></a></li>
+                  <li><a href="https://stackoverflow.com/" target="_blank"><img alt="Stackoverflow" src="images/StackOverflow.png" class="clsImg"/></a></li>
+              </ul>
+          </aside>
     </div>
+    <footer>
+        &#169; Copyright 2017 Dummy Name
+    </footer>
   </body>
 </html>
