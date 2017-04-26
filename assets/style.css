@@ -58,7 +58,7 @@ aside {
   text-align: center;
 }
 
-.clsTitle {
+.clsPageTitle {
   color: darkcyan;
   font-weight: bold;
   font-size: 32px;
@@ -70,4 +70,15 @@ aside {
   margin-top: -20px;
   width: 64px;
   height: 64px;
+}
+
+.clsGrid {
+  display: flex;        /* Flex layout so items have equal height  */
+  flex-flow: row wrap;  /* Allow items to wrap into multiple lines */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fff;
+  height: 80px;
 }
