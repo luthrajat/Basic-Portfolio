@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-  <div class="clsContainer">
+  <!-- div class="clsContainer" -->
       <header>
             <ul>
                 <li class="myName" style="float:left">My Name</li>
@@ -23,15 +23,15 @@
               Contact
               <hr/>
               <p class="clsLabel">Name</p>
-              <input type="text" id="txtName"
-                onblur="if(this.value==''){ this.value='John Smith'; this.style.color='#BBB';}"
+              <input type="text" id="txtName" placeholder="John Smith"></input>
+              <!--  onblur="if(this.value==''){ this.value='John Smith'; this.style.color='#BBB';}"
                 onfocus="if(this.value=='John Smith'){ this.value=''; this.style.color='#000';}"
-                style="color:#BBB;" value="John Smith"></input>
+                style="color:#BBB;" value="John Smith"></input> -->
               <p class="clsLabel">Email</p>
-              <input type="text" id="txtEmail"
-                  onblur="if(this.value==''){ this.value='example@gmail.com'; this.style.color='#BBB';}"
+              <input type="text" id="txtEmail" placeholder="example@gmail.com">
+                  <!-- onblur="if(this.value==''){ this.value='example@gmail.com'; this.style.color='#BBB';}"
                   onfocus="if(this.value=='example@gmail.com'){ this.value=''; this.style.color='#000';}"
-                  style="color:#BBB;" value="example@gmail.com">
+                  style="color:#BBB;" value="example@gmail.com"> -->
               </input>
               <p class="clsLabel">Message</p><br/>
               <textarea id="txtMessage" rows="10" cols="20"></textarea>
@@ -46,9 +46,10 @@
                   <li><a href="https://stackoverflow.com/" target="_blank"><img alt="Stackoverflow" src="images/StackOverflow.png" class="clsImg"/></a></li>
               </ul>
           </aside>
-    </div>
-    <footer>
+      </div>
+    <footer class="footerBand">
         &#169; Copyright 2017 Dummy Name
     </footer>
+    <!-- /div -->
   </body>
 </html>
